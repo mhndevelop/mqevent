@@ -1,16 +1,25 @@
 import Head from "next/head";
+import GlobalStyles from "./GlobalStyles";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Head>
-        <title>Next.js Basic Template</title>
+        <title>Monster Hunter Now Tools - Event</title>
       </Head>
+      <GlobalStyles />
       <main>
-        <h1>Next.js Basic Template</h1>
-        <p>This is a basic template for Next.js with TypeScript.</p>
+        <iframe
+          id="mhnquest"
+          src="https://mhn.quest"
+          style={{
+            display: "block",
+            width: "100vw",
+            height: "100vh",
+          }}
+        ></iframe>
       </main>
-    </div>
+    </>
   );
 };
 
